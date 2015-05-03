@@ -7,3 +7,5 @@ Team Member's Names: Yonah Elorza, Stephen Paladines, Ivan Corchado, Giovanni No
 Team Member's Emails: yonahel@gmail.com, stephen.paladines001@mymdc.net, ma@ivancr.com, giovnoa@gmail.com, thisismartinc@gmail.com
 
 Team Member's Social Media: https://www.linkedin.com/in/yonahel, https://www.linkedin.com/in/stephenpaladines, https://twitter.com/_ivancr, https://twitter.com/gionoa_, https://www.facebook.com/martin.cordero.125
+
+Team Website : www.changemiami.club

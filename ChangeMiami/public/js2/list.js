@@ -1,0 +1,50 @@
+Parse.initialize("0QBMDmsADkodXUb552glPC2vU62TMt4fUv6Lk2s2", "Xoi1Vy1fanXOPOITAHv3wPUoTeYAoKzrgPJHTa6n");
+
+function element2()
+{
+	var a, b, c, d;
+	
+	var List = Parse.Object.extend("List");
+	var query = new Parse.Query(List);
+	
+	query.limit(10);
+	query.find({
+  	success: function(results) {
+  	for(var i =0; i<results.length; i++)
+	{
+	a=results[i].get("Title");
+	b=results[i].get("Text");
+	c=results[i].get("Name");
+	d=results[i].get("Pic");
+
+	var string = "	\
+		<div class='row'>    \
+                      <div class='col-sm-10'>\
+                            <h3>" + a + "</h3>\
+                            <p>" + b + "</p>\
+                      </div>\
+                          <div class='col-sm-2'>\
+                            <div align='right' >"+ c +" </div>\
+                            <a href='#' class='pull-right'><img src="+ d +" class='img-circle'></a>\
+                          </div> \
+                        </div>\
+                        	\
+                        <div class='row divider'> \
+                           <div class='col-sm-12'><hr></div>\
+                        </div>  "
+
+
+	$('.js-list').prepend(string);
+	}
+	
+	
+ 	},	
+ 	error: function(error) {
+  	alert("Error: " + error.code + " " + error.message);
+ 	}
+	});
+
+	
+}
+
+element2();

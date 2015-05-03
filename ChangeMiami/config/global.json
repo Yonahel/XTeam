@@ -1,0 +1,14 @@
+{
+  "global": {
+    "parseVersion": "1.4.2"
+  },
+  "applications": {
+    "ChangeMiami": {
+      "applicationId": "0QBMDmsADkodXUb552glPC2vU62TMt4fUv6Lk2s2",
+      "masterKey": "4ES5zi02d399G9VLIM9Kn8MSCm0odTTnStdvh5uO"
+    },
+    "_default": {
+      "link": "ChangeMiami"
+    }
+  }
+}

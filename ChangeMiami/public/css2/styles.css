@@ -1,0 +1,206 @@
+/* move special fonts to HTML head for better performance */
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700');
+
+
+/* custom template */
+html, body {
+   height: 100%;
+   font-family:'Open Sans',arial,sans-serif;
+}
+
+a {
+  color:#222222;
+}
+
+.grande {
+  position:absolute; 
+  vertical-align:middle; 
+  align:center;
+  padding:10px 16px;
+  font-size:18px;
+  line-height:1.3333333;
+  border-radius:6px;
+}
+
+.petition h4 {
+  color: #650086;
+  font-size: 40px;
+  text-align: center;
+}
+
+.btn-logout {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.wrapper, .row {
+   height: 100%;
+   margin-left:0;
+   margin-right:0;
+}
+
+.wrapper:before, .wrapper:after,
+.column:before, .column:after {
+    content: "";
+    display: table;
+}
+
+.wrapper:after,
+.column:after {
+    clear: both;
+}
+
+.column {
+    height: 100%;
+    overflow: auto;
+    *zoom:1;
+}
+
+.column .padding {
+    padding: 20px;
+}
+
+.box {
+  	bottom: 0; /* increase for footer use */
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url(../img/bg1.jpg) no-repeat top center;
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+.divider {
+	margin-top:32px;
+}
+
+.btn-circle {
+    font-size: 40px;
+    color: #fff;
+}
+
+#main {
+    background-color:rgba(255, 255, 255, 0.9);
+}
+
+#user {
+    background-color:rgba(107, 107, 107, 0.09);
+}
+
+#featured {
+    background-color:rgba(255, 255, 255, 0.9);
+}
+
+#main .img-circle {
+  margin-top:18px;
+  height:70px;
+  width:70px;
+}
+
+#main .img-big-circle {
+  margin-top:18px;
+  height:100px;
+  width:100px;
+}
+
+#sidebar, #sidebar a {
+    color:#ffffff;
+    background-color:transparent;
+	  text-shadow:1px 0 1px #888888;
+}
+
+#sidebar {
+    background-color:rgba(0, 0, 0, 0.22);
+}
+
+#sidebar a.logo {
+  display:block;
+  padding:3px;
+  background-color:#fff;
+  color:#777777;
+  height:40px;
+  width:40px;
+  margin:15px;
+  font-size:26px;
+  font-weight:700;
+  text-align:center;
+  text-decoration:none;
+  text-shadow:0 0 0;
+}
+#sidebar-footer {
+  position:absolute;
+  bottom:5px;
+}
+#footer {
+  margin-bottom:20px;
+}
+
+/* center and adjust the sidebar contents on smaller devices */
+@media (max-width: 768px) {
+  #sidebar,#sidebar a.logo {
+    text-align:center;
+    margin:0 auto;
+    margin-top:30px;
+    font-size:26px;
+  }
+  #sidebar a.logo {
+    font-size:50px;
+    height:75px;
+    width:75px;
+    margin-bottom:30px;
+  }
+}
+
+
+
+
+/* bootstrap overrides */
+
+h1,h2,h3 {
+   font-weight:800;
+   font-family: Montserrat,sans-serif;
+}
+
+section {
+  color: #650086;
+  font-size: 60 px;
+}
+
+.jumbotron {
+  background-color:transparent;
+}
+.button {
+      font-size:400px;
+     vertical-align:middle;
+}
+
+.label-default {
+  background-color:#916370;
+}
+.page-header {
+  margin-top: 55px;
+  padding-top: 9px;
+  border-top:1px solid #eeeeee;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:2px;
+}
+
+.col-sm-9.full {
+    width: 100%;
+}
+
+small.text-muted {
+  font-family:courier,courier-new,monospace;
+}

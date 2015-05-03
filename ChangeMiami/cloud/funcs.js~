@@ -1,0 +1,4 @@
+document.getElementById('form1').onsubmit = function(){
+    alert('Name is ' + document.getElementById('name').value);
+    return false;
+};
